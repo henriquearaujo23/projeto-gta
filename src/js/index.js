@@ -1,0 +1,23 @@
+/*
+
+Objetivo 1 - quando o usuário clicar no botão de seleção de plataformas deve abrir as uma caixa com os botões de seleção de plataforma
+
+    Passo 1 - pegar o botão de seleção de plataformas no JS pra poder verificar quando o usuário clicar em cima dele
+
+    Passo 2 - adicionar a classe ativo no botão pra que o conteúdo dele apareça
+
+    Passo 3 - pegar o clique do usuário no js
+
+    Passo 4 - quando o usuário clicar, adicionar a classe ativo no listagem de plataformas dentro do botão pra que o conteúdo dele apareça
+
+Objetivo 2 - caso a lista de botões de plataformas já esteja aparecendo e o usuário clicar no botão de fechar, o conteúdo deve ser escondido
+    
+    Passo 1 - verificar se o botão já esta aberto, se sim, devemos remover a classe ativo pra que ele esconda o conteúdo novamente
+*/
+
+const botao = document.querySelector(".btn-plataforma");
+const elementoPlataformas = document.querySelector(".btn-plataforma .plataformas");
+
+botao.addEventListener("click", () => {
+    elementoPlataformas.classList.toggle("ativo");
+});
